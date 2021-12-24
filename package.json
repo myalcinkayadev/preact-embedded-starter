@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "preact build",
+    "build:min": "preact build --no-esm --no-sw --no-prerender",
     "serve": "sirv build --port 8080 --cors --single",
     "dev": "preact watch",
     "lint": "eslint src",
@@ -17,6 +18,7 @@
     ]
   },
   "devDependencies": {
+    "compression-webpack-plugin": "6.1.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-preact-pure": "^2.0.0",
     "eslint": "^6.0.1",
